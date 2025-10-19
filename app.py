@@ -33,6 +33,8 @@ def api():
     except Exception as e:
         return jsonify({"error": "data.json missing/invalid", "details": str(e)}), 500
 
+# route to store to-do in MongoDB
+
 @app.route("/submittodoitem", methods=["POST"])
 def submit_todo_item():
     data = request.get_json(silent=True) or request.form.to_dict()
