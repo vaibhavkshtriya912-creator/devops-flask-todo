@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flask To-Do</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>To-Do</h1>
+      <form id="todoForm">
+        <label>Item Name</label>
+        <input type="text" id="itemName" name="itemName" required />
+        <label>Item Description</label>
+        <textarea id="itemDescription" name="itemDescription" required></textarea>
+
+        <div id="advancedFields" class="hidden">
+          <label>Item ID</label>
+          <input type="text" id="itemId" name="itemId" />
+          <label>Item UUID</label>
+          <input type="text" id="itemUuid" name="itemUuid" />
+          <label>Item Hash</label>
+          <input type="text" id="itemHash" name="itemHash" />
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+      <pre id="result"></pre>
+      <hr />
+      <p>Try the <a href="/api">/api</a> route.</p>
+    </div>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

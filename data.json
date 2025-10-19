@@ -1,0 +1,7 @@
+{
+  "message": "Hello from /api",
+  "version": "1.0.0",
+  "items_example": [
+    { "itemName": "Read assignment", "itemDescription": "Understand the steps." }
+  ]
+}
